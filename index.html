@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+img {
+  border: 5px solid #FFFFFA;
+}
+</style>
+<style>
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+  background-color: #41A317;
+  padding: 50px 10px;
+  color: white;
+  text-align: center;
+  font-size: 90px; 
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.2s;
+}
+</style>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+
+</div>
+
+<div id="header">Aditya Enterprises </div>
+
+<div style="margin-top:200px;padding:15px 15px 2500px;font-size:30px">
+  
+<div class="content">
+  
+  <div class="row">
+  <div class="column">
+    <img src="C:\Users\acer\Desktop\website\t1.jpg" alt="Snow" width="400" height="400">
+    <center> model 1 </center>  
+  </div>
+  <div class="column">
+    <img src="C:\Users\acer\Desktop\website\t2.jpg" alt="Forest" width="400" height="400">
+    <center> model 2 </center>
+  </div>
+  <div class="column">
+    <img src="C:\Users\acer\Desktop\website\t3.jpg" alt="Mountains" width="400" height="400">
+    <center> model 3 </center>
+  </div>
+<div class="row">
+  <div class="column">
+    <img src="C:\Users\acer\Desktop\website\t4.jpg" alt="Snow" width="400" height="400">
+    <center> model 4 </center>
+      
+  </div>
+  <div class="column">
+    <img src="C:\Users\acer\Desktop\website\t5.jpg" alt="Forest" width="400" height="400">
+    <center> model 5 </center>
+  </div>
+  <div class="column">
+    <img src="C:\Users\acer\Desktop\website\t6.jpg" alt="Mountains" width="400" height="400">
+    <center> model 6 </center>
+  </div>
+
+
+<script>
+// When the user scrolls down 50px from the top of the document, resize the header's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header").style.fontSize = "30px";
+  } else {
+    document.getElementById("header").style.fontSize = "90px";
+  }
+}
+</script>
+
+</body>
+
+
+
+</html>
